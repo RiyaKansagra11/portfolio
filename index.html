@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RIYANSHI KANSAGRA | Portfolio</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #f4f9ff, #e6f2ff);
+    color: #003366;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #004aad, #007bff);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s;
+}
+
+nav a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* SECTIONS */
+section {
+    padding: 80px 10%;
+}
+
+/* ABOUT */
+#about {
+    background: rgba(255,255,255,0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* SKILLS */
+#skills ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+#skills li {
+    background: linear-gradient(135deg, #007bff, #004aad);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+#skills li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,123,255,0.3);
+}
+
+/* PROJECTS */
+.projects-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.project-card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 45%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: 0.4s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+/* CONTACT FORM */
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    max-width: 500px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 8px;
+    border: 1px solid #cce0ff;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0,123,255,0.3);
+}
+
+/* BUTTON */
+button {
+    background: linear-gradient(135deg, #007bff, #004aad);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,123,255,0.4);
+}
+
+.success {
+    color: #28a745;
+    margin-top: 10px;
+}
+
+/* FEEDBACK */
+.feedback-box {
+    margin-top: 40px;
+}
+
+.feedback-item {
+    background: #e6f2ff;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border-left: 5px solid #007bff;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: linear-gradient(135deg, #004aad, #007bff);
+    color: white;
+    margin-top: 60px;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(10px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* RESPONSIVE */
+@media(max-width: 900px) {
+    .project-card {
+        width: 100%;
+    }
+
+    section {
+        padding: 50px 5%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>RIYANSHI KANSAGRA</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I am <strong>RIYANSHI KANSAGRA</strong>, a passionate web developer who enjoys creating clean, modern, and interactive websites using HTML, CSS, and JavaScript.</p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Responsive Design</li>
+    </ul>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+        <div class="project-card">
+            <h3>Bank Login System</h3>
+            <p>A secure authentication platform ensuring safe access to digital banking services with encrypted login protection and validation features.</p>
+        </div>
+        <div class="project-card">
+            <h3>Pocket Planner App</h3>
+            <p>A smart budget management application that helps users track income, expenses, and savings goals efficiently.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact / Feedback</h2>
+    <form id="feedbackForm">
+        <input type="text" id="name" placeholder="Your Name">
+        <input type="email" id="email" placeholder="Your Email">
+        <textarea id="message" rows="4" placeholder="Your Feedback"></textarea>
+        <button type="submit">Submit</button>
+        <p id="successMessage" class="success"></p>
+    </form>
+
+    <div class="feedback-box">
+        <h3>Submitted Feedback</h3>
+        <div id="feedbackList"></div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 RIYANSHI KANSAGRA | All Rights Reserved</p>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    displayFeedback();
+});
+
+document.getElementById("feedbackForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let message = document.getElementById("message").value.trim();
+    let successMessage = document.getElementById("successMessage");
+
+    if (name === "" || email === "" || message === "") {
+        alert("All fields are required!");
+        return;
+    }
+
+    let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,}$/;
+    if (!emailPattern.test(email)) {
+        alert("Please enter a valid email!");
+        return;
+    }
+
+    let feedbackData = JSON.parse(localStorage.getItem("feedback")) || [];
+    feedbackData.push({ name, email, message });
+    localStorage.setItem("feedback", JSON.stringify(feedbackData));
+
+    successMessage.textContent = "Feedback submitted successfully!";
+    document.getElementById("feedbackForm").reset();
+    displayFeedback();
+});
+
+function displayFeedback() {
+    let feedbackList = document.getElementById("feedbackList");
+    feedbackList.innerHTML = "";
+
+    let feedbackData = JSON.parse(localStorage.getItem("feedback")) || [];
+
+    feedbackData.forEach(function(item) {
+        let div = document.createElement("div");
+        div.classList.add("feedback-item");
+        div.innerHTML = `<strong>${item.name}</strong> (${item.email})<br>${item.message}`;
+        feedbackList.appendChild(div);
+    });
+}
+</script>
+
+</body>
+</html>
